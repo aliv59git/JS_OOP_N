@@ -7,7 +7,7 @@
 */
 
 function findPrimes(minN, maxN) {
-  var number, minN, maxN, maxDivider, i, result;
+  var number, minN, maxN, maxDivider, i, result, tmp;
   result = result || [];
   minN = +minN;
   maxN = +maxN;
@@ -15,16 +15,16 @@ function findPrimes(minN, maxN) {
   if(minN < 0 || isNaN(minN) || maxN <0 || isNaN(maxN)){
     throw new Error('');
   }
-   // if(minN < maxN){
-   //  minN +=maxN;
-   //  maxN = minN - maxN;
-   //  minN = minN - maxN;
-   // }
+   if(minN < maxN){
+    tmp =minN+maxN;
+    maxN = tmp - maxN;
+    minN = tmp - maxN;
+   }
 
 	function isPrime(number){
     isPrime = true;
     maxDivider = Math.sqrt(number)+1;
-    for ( i = 0; i < maxDivider; i+=1) {
+    for ( i = 2; i < maxDivider; i+=1) {
        if(!number%i){
         isPrime = false;
        }
