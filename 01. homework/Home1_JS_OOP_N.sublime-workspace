@@ -1,0 +1,518 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"M",
+				"min〔function〕"
+			],
+			[
+				"max",
+				"maxN"
+			],
+			[
+				"is",
+				"isPrime"
+			],
+			[
+				"parse",
+				"parseFloat〔function〕"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"l",
+				"log	console.log(...);"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "tasks/task-1.js",
+			"settings":
+			{
+				"buffer_size": 541,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tasks/task-2.js",
+			"settings":
+			{
+				"buffer_size": 999,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"	",
+				"Build output always at end"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"del",
+				"Origami: Destroy Pane on the Left"
+			],
+			[
+				"install	",
+				"Package Control: Install Package"
+			],
+			[
+				"buildin",
+				"Build: New Build System"
+			],
+			[
+				"open",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"buidou",
+				"Build output stays at same position"
+			],
+			[
+				"out",
+				"Build output always at end"
+			],
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"open p",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"Package Control: install	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"buildOutput",
+				"Build output always at end"
+			],
+			[
+				"buil",
+				"Build: New Build System"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 447.0
+	},
+	"console":
+	{
+		"height": 226.0,
+		"history":
+		[
+			"dir",
+			"node",
+			"node 2.string-methods.html",
+			"2.string-methods.html",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/VS/JS_OOP_N/JS_OOPN_My/JS_OOP_N/01. homework",
+		"/D/VS/JS_OOP_N/JS_OOPN_My/JS_OOP_N/01. homework/tasks"
+	],
+	"file_history":
+	[
+		"/D/VS/JS_OOP_N/JS_OOPN_My/JS_OOP_N/Home1_JS_OOP/tasks/task-1.js",
+		"/D/VS/JS1_N/JS1_My/JSFundamentals/Exam13.06/Exam_withST/index2.html",
+		"/D/VS/JS1_N/JS1_My/JSFundamentals/Exam13.06/Exam_withST/scripts/task2.js",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar Folders.sublime-settings",
+		"/D/VS/JS1_N/JS1_My/JSFundamentals/Exam13.06/Exam_withST/scripts/task1.js",
+		"/D/VS/JS1_N/JS1_My/JSFundamentals/Exam13.06/Exam_withST/index1.html",
+		"/D/VS/JS1_N/JS1_My/JSFundamentals/Exam13.06/Exam_withST/scripts/main.js",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/User/untitled.sublime-build",
+		"/D/VS/JS1_N/JS1_My/JSFundamentals/Exam13.06/Exam_withST/scripts/task11.js",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/User/node-js.sublime-build",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Exam13.06/Exam_withST/ExamMyWithST.sublime-project",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Exam13.06/Exam_withST/scripts/task1.js",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Exam13.06/Exam_withST/Index1.html",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Exam13.06/Exam_withST/task1.html",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Home1DataTypeAndVariables/js/main.js",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Home1DataTypeAndVariables/index.html",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Home1DataTypeAndVariables/css/main.less",
+		"/F/VS/JS1_N/JS1_N_My/JSFundamentals/Home1DataTypeAndVariables/css/main.css",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/Less2Css/less2css.sublime-settings",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/User/less2css.sublime-settings",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/User/LESS.sublime-settings",
+		"/C/Users/Valeri/AppData/Roaming/Sublime Text 3/Packages/Less2Css/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"arr",
+			"buildOutput"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"numbers"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "tasks/task-1.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								303,
+								303
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tasks/task-2.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								936,
+								936
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 212.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/node.sublime-build",
+	"project": "Home1_JS_OOP_N.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"index1.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\VS\\JS1_N\\JS1_My\\JSFundamentals\\ExamJS1N\\Exam13.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
