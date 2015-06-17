@@ -7,38 +7,40 @@
 */
 
 function findPrimes(minN, maxN) {
-  var number, minN, maxN, maxDivider, i, result, tmp;
-  result = result || [];
-  minN = +minN;
-  maxN = +maxN;
- 
-  if(minN < 0 || isNaN(minN) || maxN <0 || isNaN(maxN)){
-    throw new Error('');
-  }
-   if(minN < maxN){
-    tmp =minN+maxN;
-    maxN = tmp - maxN;
-    minN = tmp - maxN;
-   }
+  var minN = +minN, 
+      maxN = +maxN,
+      divisor,
+      maxDivisor,
+      i,
+      isPrime,
+      result = []; 
 
-	function isPrime(number){
-    isPrime = true;
-    maxDivider = Math.sqrt(number)+1;
-    for ( i = 2; i < maxDivider; i+=1) {
-       if(!number%i){
-        isPrime = false;
-       }
-     }; 
-     return isPrime;
-  }
+      if(minN < 0 || isNaN(minN) || maxN < 0 || isNaN(maxN)){
+        throw new Error('');
+      }
+      if(typeof(minN)=== undefined || typeof(maxN) === undefined){
+        throw new Error('');
+      }
 
-  for ( i = minN; i <= maxN; i+=1) {
-    if(isPrime(i)){
-      result.push(i);
-    }
-  };
+      for (i = +minN; i <= +maxN; i+=1) {
+        isPrime = true;
+        maxDivisor = Math.sqrt(i);
+
+        for (divisor = 2; divisor <= maxDivisor; divisor+=1) {
+          if(!(i%divisor)){
+            isPrime = false;
+            break;
+          }
+        };
+        if(isPrime && i > 1){
+          result.push(i);
+        }
+      };
   
   return result;
 }
 
 module.exports = findPrimes;
+
+
+
