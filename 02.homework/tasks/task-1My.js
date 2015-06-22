@@ -1,0 +1,36 @@
+function solve(){
+	var library = (function(){
+		var books = [];
+		var categories = [];
+
+		function listBooks(){
+			books.sort(function (book1.ID, book2.ID){
+				return book1.ID-book2.ID;
+			})
+			return books;
+		}
+
+		function addBook(book){
+			book.ID = books.length+1;
+			books.push(book);
+			return book;
+		}
+
+		function listCategories(){
+			return categories;
+		}
+
+		return {
+			books: {
+				list: listBooks,
+				add: addBook
+			},
+			categories: {
+				list: listCategories
+			}
+		};
+
+	}());
+	return library;
+}
+module.exports = solve;
