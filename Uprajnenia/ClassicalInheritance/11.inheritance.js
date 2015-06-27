@@ -23,7 +23,7 @@
 
     Rect.prototype = new Shape();
 
-    Rect.prototype.colcArea = function(){
+    Rect.prototype.calcArea = function(){
       return this._width * this._height;
     };
 

@@ -24,7 +24,7 @@ function solve() {
       if(val.length < minSymbols || val.length > maxSymbols){
         throw new Error('Names length muist be beween '+ minSymbols + ' and '+ maxSymbols + ' symbols!');
       }
-      if(!/^[A-Za-z]/.test(val)){
+      if(!/^[A-Za-z]+$/.test(val)){
         throw new Error('Names must containing symbls A-Z, a-z!')
       }
     }
