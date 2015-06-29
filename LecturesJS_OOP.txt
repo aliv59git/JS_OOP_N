@@ -56,6 +56,81 @@ II лекция: Скоуп и Кложър лекция Дончо
 
 
 
+Разглеждане вкъщи лекцията и презентацията Prototype Inheritance and Duck Typing
+
+Прототипът е обект, който дава свойства/properties на своите наследители. Всеки обект има свой собствен прототип. By default, set to Object.prototype. Това формира така наречената "Прототипна верига". Object има прототип null, завършвайки прототипната верига
+
+Всеки JS обект има property .__proto__  То може да се използва да се достъпи/да се промени прототипа. Когато сетваме прототипа на обекта, обектът има достъп до всички property -та  на прототипа.  Наследяването e с реда:
+
+dog.__proto__ = animal;   //тогава dog ще има достъп до пропертитата на парента    
+dog.makeNoise();  //през прототипната верига се достъпва проперти на парента. Това се нарича Прототипно наследяване (Prototypal Inheritance).
+
+var animal = {			//Setting the Prototype with __proto__
+    makeNoise: function(){
+	console.log('The ' + this.type + 'makesnoise" '+ this.noise + ' " ');
+    }
+};
+var dog = { type: 'dog', noise: 'Djaff' }'
+dog.__proto__ = animal;
+dog.makeNoise();   // makeNoise() is from the prototype(animal);  
+
+Setting Prototypes with Object.create() -> The better way to work with protorypes
+
+var animal = {				//the same:     var animal = {	
+  //properties and methods				             //properties and methods
+};						       };
+var dog = Object.create(animal);			var dog = {
+dog.type = 'dog';					    type: 'dog',
+dog.noise = 'djaff';					    noise: 'djaff'
+						};
+						dog.__proto__ = animal;
+Working with Object Protorypes
+Object.create()  е добре но не е добре да се добавят пропертита с точкова нотация. Това се решава с Object.defineProperties(): 
+var dog = (function (parent){
+    var dog = Object.defineProperties(parent, {
+         type: {
+	value: 'dog'
+         },
+           noise: {
+               	value: 'djaff'
+         }
+    });
+    return dog;
+}(animal));
+
+Reusing Parent Methods - Използването на парент методите е важно, решаващо за всеки ООП дизайн. Благодарение на това има
+Function.protorype.call(this, ... ) and Function.prototype.apply(this, ... ); .... са пре- дефинираните в парента пропертита. 
+
+Duck Typing 
+
+Duck Typing-а е слой от програмния език и правилата за дизайн в началото на проекта/писането/.  Писането се засяга/влияе от типа на всеки обект, т.е. методи работят с обекти от някакъв тип. Дък тайпингът се засяга от установяването на подготящността на обект за дадена цел. т.е. методи с обект който има някакви пропертита.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
