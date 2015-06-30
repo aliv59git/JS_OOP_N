@@ -74,29 +74,29 @@ function solve() {
 
     function isValidAttributeName(name){
       if(typeof name !== 'string'){
-        throw new Error('Invalid attribute name!')
+        throw new Error('Invalid attribute name!');
       }
 
       return /^[A-Z0-9\-]+$/i.test(name);
     }
 
     function getSortedAttributesString(attributes){
-      var attributesString = '';
-      var keys = [];
+        var attributesString = '';
+        var keys = [];
 
-      for (var key in attributes){
-        keys.push(key);
-      }
+        for(var key in attributes){
+            keys.push(key);
+        }
 
-      keys.sotr();
-      var currentKey
+        keys.sort();
+        var currentKey;
 
-      for (var ind = 0, len = keys.length; ind < len; ind += 1){
-        currentKey = keys[ind];
-        attributesString += ' ' + currentKey + '="' + attributes[currentKey] + '"';
-      }
+        for(var ind = 0, len = keys.length; ind < len; ind += 1){
+            currentKey = keys[ind];
+            attributesString += ' ' + currentKey + '="' + attributes[currentKey] + '"';
+        }
 
-      return attributesString;
+        return attributesString;
     }
 
 		var domElement = {
