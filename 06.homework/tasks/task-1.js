@@ -47,18 +47,83 @@
 function solve() {
 	var Course = {
 		init: function(title, presentations) {
+      isValidTitle(title);
+      isValidPresentations(presentations);
+      this.title = title;
+      this.presentations = presentations;
+      this.students = [];
+
+      return this;
 		},
 		addStudent: function(name) {
+      var student = vlidateName(name);
+      var id = this.students.length + 1;
+      student.id = id;
+
+      this.students.push(student);
+      return id;
 		},
 		getAllStudents: function() {
+      return this.students.slice();
 		},
 		submitHomework: function(studentID, homeworkID) {
+      isValidIdId(studentID, 1, this.students.length);
+      isValidID(homeworkID, 1, this.presentation.length);
 		},
 		pushExamResults: function(results) {
+
 		},
 		getTopStudents: function() {
+
 		}
 	};
+
+  Object.defineProperty(Course, 'title', {
+    get: function(){
+      return this._title;
+    },
+    set: function(value){
+      this._title = value;
+    }
+  });
+
+  Object.defineProperty(Course, 'presentations', {
+    get: function(){
+      return this._presentations;
+    },
+    set: function(value){
+      this._presentations = value;
+    }
+  });
+
+  Object.defineProperty(Course, 'students', {
+    get: function(){
+      return this._students;
+    }, 
+    set: function (value){
+      this._students = value;
+    }
+  });
+
+  function isValidTitle(title){
+    if(title === null || typeof title !== 'string'){
+      throw new Error('Invalid title!');
+    }
+
+    if(title.trim()==='' || title !== title.trim()){
+      throw new Error('Invalid title');
+    }
+
+    if(/[\s]{2,}/.test(title)){
+      throw new Error('Invalid spacing in title!');
+    }
+  }
+
+
+
+
+
+
 
 	return Course;
 }
