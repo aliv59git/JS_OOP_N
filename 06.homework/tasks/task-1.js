@@ -56,7 +56,7 @@ function solve() {
       return this;
 		},
 		addStudent: function(name) {
-      var student = vlidateName(name);
+      var student = isValidName(name);
       var id = this.students.length + 1;
       student.id = id;
 
@@ -67,8 +67,8 @@ function solve() {
       return this.students.slice();
 		},
 		submitHomework: function(studentID, homeworkID) {
-      isValidIdId(studentID, 1, this.students.length);
-      isValidID(homeworkID, 1, this.presentation.length);
+      isValidID(studentID, 1, this.students.length);
+      isValidID(homeworkID, 1, this.presentations.length);
 		},
 		pushExamResults: function(results) {
 
@@ -119,14 +119,60 @@ function solve() {
     }
   }
 
+  function isValidPresentations(presentations){
+    if((presentations === null) || !Array.isArray(presentations)){
+      throw new Error('Invalid type for presentations!');
+    }
 
+    if(presentations.length === 0){
+      throw new Error('Invalid presentations length!');
+    }
 
+    presentations.forEach(function (title) {
+      isValidTitle(title);
+    })
+  }
 
+  function isValidName(name){
+    if(name === null || typeof name !== 'string'){
+      throw new Error('Invalid type for name!');
+    }
 
+    if(name.trim()==='' || name !== name.trimLeft()){
+      throw new Error('Empty or invalid name string!');
+    }
 
+    var names = name.split(' ');
 
-	return Course;
+    if(names.length !== 2){
+      throw new Error('Invalid name string!');
+    }
+
+    names.forEach(function (n){
+      if(!/^[A-Z][a-z]*$/.test(n)){
+        throw new Error('Invalid name!');
+      }
+    });
+
+    return {
+      firstname: names[0],
+      lastname: names[1]
+    };
+  }
+
+  function isValidID(id, min, max){
+    if(isNaN(id)){
+      throw new Error('Invaid type for id!');
+    }
+
+    id = +id;
+
+    if(id < min || id > max){
+      throw new Error('Invalid id range!');
+    }
+  }
+
+  return Course;
 }
-
 
 module.exports = solve;
