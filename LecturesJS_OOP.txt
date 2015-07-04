@@ -56,7 +56,7 @@ II лекция: Скоуп и Кложър лекция Дончо
 
 
 
-Разглеждане вкъщи лекцията и презентацията Prototype Inheritance and Duck Typing
+V. Разглеждане вкъщи лекцията и презентацията Prototype Inheritance and Duck Typing
 
 Прототипът е обект, който дава свойства/properties на своите наследители. Всеки обект има свой собствен прототип. By default, set to Object.prototype. Това формира така наречената "Прототипна верига". Object има прототип null, завършвайки прототипната верига
 
@@ -104,6 +104,45 @@ Function.protorype.call(this, ... ) and Function.prototype.apply(this, ... ); ..
 Duck Typing 
 
 Duck Typing-а е слой от програмния език и правилата за дизайн в началото на проекта/писането/.  Писането се засяга/влияе от типа на всеки обект, т.е. методи работят с обекти от някакъв тип. Дък тайпингът се засяга от установяването на подготящността на обект за дадена цел. т.е. методи с обект който има някакви пропертита.  
+
+Exceptions in JS Лекция на Дончо. 25.06.15
+
+Най-чести са синтактичните грешки - нещо не е написано както трябва според изискванията на езика, 
+
+Референс ексепшънс - опитваме се да правим нещо с undefined - 
+
+За прихващане на грешките - try - catch  блокове
+
+Като се хвърли ексепшън, спира изпълнението на цялата програма. Когато обаче е в try - catch блок, показва грешката и продължава изпълнението на програмата. 
+
+Ексепшъните са информация за девелопърите. Ексепшъните се казват Error ReferenceError, SyntaxError; 	 TypeError 
+
+Лекция: Object and Object.prototype methods
+
+Object Methods:
+
+Object.defineProperty(obj, prop, descriptor)
+Object.defineProperties()
+Object.create()
+Object.keys()
+Object.preventExtensions()
+Oject.isExtensible()
+Object.isSeal()
+Object.isSealed()
+Object.isFreeze()
+Object.isFrozen()
+Object.assign()
+Object.is()
+
+Object.prototype Methods: 
+Object.prototype.hasOwnProperty()
+Object.prototype.isPropertyOf()
+Object.prototype.propertyEnumerable()
+Object.prototype.valueOf()
+
+
+
+
 
 
 
