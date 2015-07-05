@@ -1,26 +1,5 @@
 function solve() {
     var library = (function () {
-        CONSTS = {
-			VALID: {
-				BOOK_TITLE: 'BOOK #',
-				BOOK_ISBN: {
-					TEN_DIGITS: '1234567890',
-					THIRTEEN_DIGITS: '1234567890123',
-				},
-				AUTHOR: 'John Doe',
-				CATEGORY: 'Book Category'
-			},
-			INVALID: {
-				BOOK_TITLE: {
-					SHORT: 'B',
-					LONG: new Array(102).join('A')
-				},
-				AUTHOR: '',
-				BOOK_ISBN: '1234'
-			}
-		};
-
-
         var minSymbols = 2,
             maxSymbols = 100,
             ISBNSymbolsLenght = [10, 13],
@@ -107,11 +86,14 @@ function solve() {
         }
 
         function listBooks(sortPropertyObj) {
-            var sortPropertyObj = sortPropertyObj || {},
-                sortProperties = Object.keys(sortPropertyObj),
-                sortProperty = sortProperties[0];
+            var sortProperties,
+                sortProperty;
 
-            return books.filter(function(obj){
+            sortPropertyObj = sortPropertyObj || {};
+            sortProperties = Object.keys(sortPropertyObj);
+            sortProperty = sortProperties[0];
+
+            return books.filter(function (obj) {
                 return obj[sortProperty] === sortPropertyObj[sortProperty];
             }).sort(function (a, b) {
                 return a.id - b.id;
@@ -145,23 +127,6 @@ function solve() {
             }
         };
     }());
-
-    var book = {
-        title: CONSTS.VALID.BOOK_TITLE + 1,
-        isbn: CONSTS.VALID.BOOK_ISBN.TEN_DIGITS,
-        author: CONSTS.VALID.AUTHOR,
-        category: CONSTS.VALID.CATEGORY
-    },
-        book2 = {
-        title: CONSTS.VALID.BOOK_TITLE + 2,
-        isbn: CONSTS.VALID.BOOK_ISBN.THIRTEEN_DIGITS,
-        author: CONSTS.VALID.AUTHOR,
-        category: CONSTS.VALID.CATEGORY
-    };
-    library.books.add(book);
-    library.books.add(book2);
-
-    var a = library.categories.list();
 
     return library;
 }
