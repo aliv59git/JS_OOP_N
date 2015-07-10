@@ -51,7 +51,7 @@
                     throw new Error(name + ' must be a string');
                 }
                 if(!(CONSTANTS.TEXT_MIN_LENGTH < val.length && val.length < CONSTANTS.TEXT_MAX_LENGTH)){
-                    throw new Error (name + ' must be between+' CONSTANTS.TEXT_MIN_LENGTH ' and '+ CONSTANTS.TEXT_MAX_LENGTH + ' symbols' );
+                    throw new Error (name + ' must be between'+ CONSTANTS.TEXT_MIN_LENGTH +' and '+ CONSTANTS.TEXT_MAX_LENGTH + ' symbols' );
                 }
             },
 
